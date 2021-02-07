@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho">
+            <section id="titulo">
+                <h3>Simple, traffic-based pricing</h3>
+            </section>
+            <section id="subtitulo">
+                <h5>Sign-up for our 30-day trial. No credit card required.</h5>
+            </section>
+        </section>
+    </header>
+    <section class="tres">
+        <section class="planos">
+            <section class="detalhes">
+                <section class="views">
+                    <label id="labelQtd" for="">100k </label>
+                    <label id="labelView" for="">Pageviews</label>
+                </section>
+                <section class="preco">
+                    <label id="labelPreco" for=""><strong>R$16.00</strong></label>
+                    <label id="labelDesc" for=""> /month</label>
+                </section>
+            </section>
+            <section class="slidecontainer">
+                <input type="range" onchange="evt()" min="1" max="5" value="3" step="1" class="slider" id="myRange">
+            </section>
+            <section>
+                <section class="switch__container">
+                    <label id="monthly"></label>
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox" onchange="evt()" />
+                    <label for="switch-shadow"></label>
+                    <label id="yearly">Yearly Billing</label>
+                    <label id="discount"> 25% discount </label>
+                </section>
+            </section>
+        </section>
+        <section class="opcoes">
+            <section class="vantagens">
+                <ul class="listaVantagens">
+                    <li>Unlimited Websites</li>
+                    <li>100% data ownership</li>
+                    <li>Email reports </li>
+                </ul>
+            </section>
+            <section class="teste">
+                <button>Start my trial</button>
+            </section>
+        </section>
+    </section>
+    <script src="/JS/index.js"></script>
+</body>
+
+</html>
